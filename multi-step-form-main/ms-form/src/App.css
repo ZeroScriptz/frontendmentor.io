@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cont2:hover {
+    border-radius: 2px;
+    border-color: blueviolet;
+  }
+  .cont:hover {
+    border-width: 2px;
+    border-color: blueviolet;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.cont1 {
+    
+}
+
+.cont2 {
+
+  
+}
+
+.cont3 {
+    border-width: 2px;
+    height: 13rem;
+    width: 10rem;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: blueviolet;
+}
+
+.cont4 {
+  height: 13rem;
+  width: 10rem;
+  border-width: 2px;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: blueviolet;
+  
+}

@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
+import arcade from '../assets/images/icon-arcade.svg'
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 
@@ -21,6 +22,7 @@ function App() {
       [e.target.name]: e.target.name
     })
   }
+
   const next = () => {
     if (formNo === 1 && state.name && state.email && state.phnum) {
       setFormNo(formNo + 1)
@@ -45,6 +47,17 @@ function App() {
         toast.error('Please fill in all forms!')
       }
     }
+
+    const [style, setStyle] = useState("");
+  
+    const changeStyle = (id) => {
+      if (id === "cont1") {
+        setStyle("cont3")
+      } else if (id === "cont2") {
+        setStyle("cont4");
+      }
+
+    };
 
   return (
     
@@ -81,9 +94,22 @@ function App() {
       formNo === 2 && <div> 
             <div className='flex flex-col mb-2'> 
               <label htmlFor='plans'>Plans </label>
-              <button>Arcade</button>
             </div>
-
+            <div >
+                <button onClick={() => changeStyle("cont1")} className='cont1  rounded-md bg-pur border-2 hover:border-purple-500 duration-500 ease-in-out  w-40 h-52 '>
+                  <img 
+                  className='mb-4 ml-4'
+                  src={arcade} 
+                  />
+                  <h1 className='font-bold mr-24'>Arcade</h1>
+                <h2 className='text-slate-500 mr-24 '>$9/mo</h2>
+                </button> 
+                <div className={style}>
+                <button onClick={() => changeStyle("cont2")} className="cont2 font-bold rounded-md bg-pur border-2 hover:border-purple-500 duration-500 ease-in-out  w-40 h-52 "  >
+                Advanced
+                </button>
+      </div>
+              </div>
       </div>
     }
 
