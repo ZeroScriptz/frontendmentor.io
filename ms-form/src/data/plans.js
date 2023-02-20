@@ -5,7 +5,7 @@ import proIcon from '../assets/images/icon-pro.svg';
 const plans = [
     {
         name: 'Arcade',
-        img: iconArcade,
+        img: arcodeIcon,
         price: {
             monthly: 9,
             yearly: 90
@@ -13,7 +13,7 @@ const plans = [
     },
     {
         name: 'Advanced',
-        img: iconAdvanced,
+        img: advancedIcon,
         price: {
             monthly: 12,
             yearly: 120
@@ -21,7 +21,7 @@ const plans = [
     },
     {
         name: 'Pro',
-        img: iconPro,
+        img: proIcon,
         price: {
             monthly: 15,
             yearly: 150

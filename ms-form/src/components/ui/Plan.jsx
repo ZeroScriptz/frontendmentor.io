@@ -20,7 +20,7 @@ export default function PlanSelector({ item }) {
             className="sr-only peer"
             checked={state.plan === item.plan}
             value={item.name}
-            onChange={handleChange}
+            onChange={handlePlanChange}
             />
             <div className="rounded-large p-4 border-light-gray transition-all flex border-[1px] peer-checked:bg-very-light-gray cursor-pointer peer-checked:border-purple gap-[0.875rem] desktop:justify-between desktop:flex-col desktop:h-[160px] desktop:w-[138px]">
                 <img src={item.img} className="desktop:w-[40px]" alt={`${item.name} plan`} />

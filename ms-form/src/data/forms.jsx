@@ -21,3 +21,5 @@ const forms = [
         text: 'Your Summary'
     }
 ]
+
+export default forms;

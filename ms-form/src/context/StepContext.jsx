@@ -36,7 +36,7 @@ function reducer(state, action) {
 const StepContext = createContext()
 
 const StepProvider = (props) => {
-    const [state, dispatchStep] = useReducer(reducer, intialState)
+    const [step, dispatchStep] = useReducer(reducer, intialState)
     return <StepContext.Provider value={{ step, dispatchStep  }}>{props.children}</StepContext.Provider>
 }
 
