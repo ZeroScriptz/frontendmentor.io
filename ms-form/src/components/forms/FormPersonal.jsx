@@ -59,7 +59,7 @@ export default function FormPersonal() {
 
   return (
     <div className="flex flex-col">
-      <FormHeader title="Select your plan" text="You have the option of monthly or yearly billing." />
+      <FormHeader title="Personal Info" text="Please provide your name, email address, and phone number." />
       <div className="flex flex-col gap-4 desktop:gap-6">{inputElements}</div>
     </div>
   )
