@@ -5,6 +5,19 @@ import FormSummary from '../components/forms/FormSummary';
 
 const forms = [
     {
-        component: <FormPersonal />
+        component: <FormPersonal />,
+        text: 'Your Information'
+    },
+    {
+        component: <FormPlan />,
+        text: 'Select your Plan'
+    },
+    {
+        component: <FormAddons />,
+        text: 'Your Add-ons'
+    },
+    {
+        component: <FormSummary />,
+        text: 'Your Summary'
     }
 ]
